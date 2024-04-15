@@ -5,5 +5,5 @@
 아래 안내드리는 사전과제 및 가이드 화면 확인 부탁드리겠습니다.
 감사합니다😄
 
-사전과제 - main.html
-가이드 - guide.html
+사전과제 - <a href="main.html">main.html</a>
+가이드 - <a href="guide/guide.html">guide.html</a>
