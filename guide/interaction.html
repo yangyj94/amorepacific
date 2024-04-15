@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
+    <title>웹퍼블리셔 사전과제 가이드 | 아모레퍼시픽</title>
+    <link rel="stylesheet" href="asset/guide.css">
+    </style>
+  </head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="tit-main">사전과제 가이드</h1>
+    </header>
+    <main class="main">
+      <aside class="snb-wrap">
+        <a href="guide.html" class="link-home">HOME</a>
+        <nav class="snb-menu">
+          <ul class="list-menu">
+            <li><a href="comm.html" class="link-menu">공통 가이드</a></li>
+            <li><a href="layout.html" class="link-menu">레이아웃 가이드</a></li>
+            <li><a href="class.html" class="link-menu">클래스 작명 가이드</a></li>
+            <li><a href="css.html" class="link-menu">css 작성 가이드</a></li>
+            <li><a href="interaction.html" class="link-menu on">인터렉션 실행 가이드</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="contents">
+        <div class="section-cont">
+          <h2 class="tit-cont">인터렉션 실행 가이드</h2>
+          <div class="wrap-cont">
+            <div class="area-cont">
+              <div class="info-cont">
+                <h3 class="tit-guide">1. header nav</h3>
+                <ul class="list-guide">
+                  <li>div.wrap-menu에 open클래스 부여시 레이어 활성화 됩니다.</li>
+                  <li>클릭시에도 활성화 될 수 있게 스크립트 적용시켰습니다.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="area-cont">
+              <div class="info-cont">
+                <h3 class="tit-guide">2. scroll</h3>
+                <ul class="list-guide">
+                  <li>window scrollTop > 1 = top버튼 노출 / 그 이하일시 top버튼 숨김처리했습니다.</li>
+                  <li>top버튼 클릭시 맨위로 이동됩니다.</li>
+                  <li>window scrollTop > div.store-info offset top = fixed 헤더 노출, 기존헤더는 aria-hidden 처리했습니다.</li>
+                  <li>탭 영역은 position:sticky로 스타일 처리했습니다.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="area-cont">
+              <div class="info-cont">
+                <h3 class="tit-guide">3. swiper</h3>
+                <ul class="list-guide">
+                  <li>비쥬얼 영역, 홈 > 매장소식 영역 swiper로 작업하였습니다.</li>
+                  <li>swiper영역 hover시 이전,다음 페이지 이동 버튼 노출됩니다.</li>
+                  <li>전화, 예약, 공유 버튼 영역은 현재 화면으로 고려하였을때 최소사이즈까지 정상노출되므로 swiper추가하지 않았습니다.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

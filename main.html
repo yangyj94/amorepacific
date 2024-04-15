@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
+  <title>웹퍼블리셔 사전과제 | 아모레퍼시픽</title>
+  <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="asset/css/style.css">
+  <script src="asset/js/jquery-3.7.1.min.js"></script>
+  <script src="asset/js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=f3e4fbd0810d7f19aa74775a13478f01"></script><!-- kakao map -->
+  <script src="asset/js/main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- header:s -->
+    <header class="header">
+      <div class="header-info"><!-- 스크롤되어 fixed header 활성화시 aria-hidden="true" 속성 추가 -->
+        <h1 class="tit-logo">
+          <a href="#none" class="link-logo">
+            <img src="asset/images/bi_amorestore.svg" width="158" height="28" class="img-g" alt="AMORE MALL">
+          </a>
+        </h1>
+        <div class="wrap-menu"><!-- 레이어 활성화 시 'open' 클래스 추가 -->
+          <button type="button" class="btn-menu" aria-haspopup="true" aria-expanded="false"><!-- 레이어 활성화 시 aria-expanded="true"로 변경 -->
+            <span class="icon icon-drop">메뉴 열기</span><!-- 레이어 활성화시 닫기로 텍스트 변경-->
+          </button>
+          <div class="layer-menu">
+            <ul class="list-menu">
+              <li>
+                <a href="#none" class="link-menu">
+                  <span class="menu-logo">
+                    <span class="thumb-logo">
+                      <img src="asset/images/logo_amoremall.png" width="32" height="32" alt="">
+                    </span>
+                  </span>아모레 몰 
+                </a>
+              </li>
+              <li>
+                <a href="#none" class="link-menu active"><!-- 활성화된 메뉴 'active' 클래스 부여 -->
+                  <span class="menu-logo">
+                    <span class="thumb-logo">
+                      <img src="asset/images/logo_amorestore.jpg" width="32" height="32" alt="">
+                    </span>
+                  </span>아모레 스토어<span class="blind">선택됨</span><!-- 선택되지 않을시 span.blind 선택됨 제거 -->
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#none" class="link-my"><span class="icon icon-my">로그인</span></a>
+      </div>
+      <div class="store-info"><!-- 스크롤되어 fixed header 활성화시 aria-hidden="true" 속성 추가 -->
+        <h2 class="tit-store"><a href="#none" class="link-store">아모레성수</a></h2>
+        <p class="txt-store">내 안의 아름다움을 마주하는 공간, 아모레성수에서 만나요!</p>
+      </div>
+      <div class="header-sub hide">
+        <h2 class="tit-store"><a href="#none" class="link-store">아모레성수</a></h2>
+        <a href="#none" class="link-my"><span class="icon icon-my">로그인</span></a>
+      </div>
+    </header>
+    <!-- header:e -->
+    <!-- main:s -->
+    <main class="main">
+      <div class="section-visual">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="visual-image">
+                <img src="https://images-kr.amoremall.com/o2o/AS0000000166?resize=670:670" class="img-g" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="visual-image">
+                <img src="https://images-kr.amoremall.com/o2o/AS0000000166?resize=670:670" class="img-g" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="visual-image">
+                <img src="https://images-kr.amoremall.com/o2o/AS0000000166?resize=670:670" class="img-g" alt="아모레성수 파우더룸">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="visual-image">
+                <img src="https://images-kr.amoremall.com/o2o/AS0000000166?resize=670:670" class="img-g" alt="아모레성수 파우더룸">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="visual-image">
+                <img src="https://images-kr.amoremall.com/o2o/AS0000000166?resize=670:670" class="img-g" alt="아모레성수 파우더룸">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="visual-image">
+                <img src="https://images-kr.amoremall.com/o2o/AS0000000166?resize=670:670" class="img-g" alt="아모레성수 파우더룸">
+              </div>
+            </div>
+          </div>
+          <button type="button" class="swiper-btn swiper-btn-prev"><span class="icon icon-arrow">이전 페이지</span></button>
+          <button type="button" class="swiper-btn swiper-btn-next"><span class="icon icon-arrow">다음 페이지</span></button>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="section-info">
+        <ul class="list-info">
+          <li><button type="button" class="btn-info"><span class="icon icon-tel"></span><span class="txt-info">전화</span></button></li>
+          <li><a href="#none" class="btn-info"><span class="icon icon-reserve"></span><span class="txt-info">예약</span></a></li>
+          <li><button type="button" class="btn-info"><span class="icon icon-share"></span><span class="txt-info">공유</span></button></li>
+        </ul>
+      </div>
+      <div class="section-detail">
+        <ul class="list-tab" role="tablist">
+          <li role="presentation"><button type="button" class="btn-tab" role="tab" aria-selected="true">홈</button></li>
+          <li role="presentation"><button type="button" class="btn-tab" role="tab" aria-selected="false">소개</button></li>
+          <li role="presentation"><button type="button" class="btn-tab" role="tab" aria-selected="false">예약</button></li>
+          <li role="presentation"><button type="button" class="btn-tab" role="tab" aria-selected="false">소식</button></li>
+        </ul>
+        <div class="panel-tab">
+          <div class="wrap-cont">
+            <div class="news-cont">
+              <h3 class="blind">매장 소식</h3>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#none" class="link-news">
+                      <strong class="tit-news">커스텀미 맞춤 스킨케어 서비스 오픈 및 이벤트 안내커스텀미 맞춤 스킨케어 서비스 오픈 및 이벤트 안내커스텀미 맞춤 스킨케어 서비스 오픈 및 이벤트 안내</strong>
+                      <p class="desc-news">CUSTOM.ME 맞춤 스킨케어 서비스 OPEN! AI Skin Analysis 30년간의 피부 연구와 100만 데이터 기반의 AI 기술을 바탕으로 한 나만의 AI 피부 분석 리포트를 아모레성수에서 받아보세요. 예약없이, 누구나, 무료로 체험할 수 있어요.</p>
+                      <span class="txt-date">2024.03.25</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#none" class="link-news">
+                      <strong class="tit-news">커스텀미 맞춤 스킨케어 서비스 오픈 및 이벤트 안내</strong>
+                      <p class="desc-news"></p>
+                      <span class="txt-date">2024.03.25</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#none" class="link-news">
+                      <strong class="tit-news">커스텀미 맞춤 스킨케어 서비스 오픈 및 이벤트 안내</strong>
+                      <p class="desc-news"></p>
+                      <span class="txt-date">2024.03.25</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide view-more">
+                    <a href="#none" class="link-more">
+                      <span class="wrap-icon">
+                        <span class="icon icon-more"></span>
+                      </span>
+                      <span class="txt-more">더보기</span>
+                    </a>
+                  </div>
+                </div>
+                <button type="button" class="swiper-btn swiper-btn-prev"><span class="icon icon-arrow">이전 페이지</span></button>
+                <button type="button" class="swiper-btn swiper-btn-next"><span class="icon icon-arrow">다음 페이지</span></button>
+              </div>
+            </div>
+            <div class="info-cont">
+              <h3 class="tit-cont">매장 정보</h3>
+              <div class="wrap-cont">
+                <ul class="list-info">
+                  <li>
+                    <span class="icon icon-location"></span>
+                    <div class="info-detail">
+                      <span class="txt-info">서울 성동구 아차산로11길 7</span>
+                      <span class="txt-sub">서울 성동구 성수동2가 277-52</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="icon icon-tel"></span>
+                    <div class="info-detail">
+                      <a href="tel:02-469-8600" class="link-g">02-469-8600</a>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="icon icon-time"></span>
+                    <div class="info-detail">
+                      <span class="txt-info">10:30 ~ 20:30</span>
+                      <span class="txt-sub">매주 월요일 휴무, 명절 당일 휴무</span>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="icon icon-sns"></span>
+                    <div class="info-detail">
+                      <a href="https://www.instagram.com/amore_seongsu/" class="link-g">인스타그램</a>
+                    </div>
+                  </li>
+                </ul>
+                <div class="wrap-map">
+                  <button type="button" class="btn-map"><span class="icon icon-large">지도 확대하기</span></button>
+                  <div id="map" class="map"></div>
+                </div>
+              </div>
+            </div>
+            <div class="info-cont">
+              <h3 class="tit-cont">매장 소개</h3>
+              <div class="wrap-cont">
+                <button class="btn-intro">
+                  <span class="txt-intro">내 안의 아름다움을 알아가는 곳, 아모레성수새롭고 빛나는 것은 젊고 아름답습니다.그러나 오랜 시간을 견디며 포개어진 시간 속에 피어나는 본연의 미는 그 자체로 대체할 수 없는 깊이와 새것이 줄 수 없는 귀함이 있습니다.콘크리트로 투박하게 마감된 벽, 정비를 위해 곳곳에 설치된 여러가지 장치들, 고르지 못한 높낮이의 바닥과 계단, 불쑥 나타나는 낮은 천장과 언제 그랬냐는 듯 다시 나타나는 높고 뾰족한 천장들.공장 지대였던 성수동의 로컬 분위기를 고스란히 담고 있는 이곳은, 오랜 시간 동안 고장 난 자동차가 제대로 작동하도록 보살피고 손질하는 공간 이었습니다. 우리는 거칠지만 세월을 견디며 고유의 멋으로 충만한 이곳에서, 모든 분들께 전해드리고 싶은 ‘본연의 아름다움’에 대한 이야기를 정성스럽게 준비했습니다. 이 계절 내 피부가 가장 좋아하는 감촉의 크림을 느껴보세요. 나에게 가장 잘 어울리는 립 컬러를 발견해보는 즐거움과 큰 창을 통해 깊이 들어오는 햇빛과 정원의 초록을 눈에 담으며 나에게 진정한 휴식을 선물해보세요.다채롭고 진솔한 경험을 통해 나 자신을 마주하는 곳, 우리 본연의 아름다움을 탐험하고 발견하며 자신의 ‘미’를 알아가는 공간, 아모레성수 입니다.</span>
+                  <span class="area-btn">
+                    <span class="btn-more">
+                      <em class="txt-emph">아모레성수</em> 자세히보기<span class="icon icon-more"></span>
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="info-cont">
+              <h3 class="tit-cont">서비스 예약</h3>
+              <div class="wrap-cont">
+                <ul class="list-prd">
+                  <li>
+                    <a href="#none" class="link-prd">
+                      <div class="thumb-prd">
+                        <img src="https://images-kr.amoremall.com/o2o/SS0000000369?resize=*:200&amp;crop=200:200;*,*" alt="" class="img-thumb">
+                      </div>
+                      <div class="prd-detail">
+                        <strong class="tit-prd">원포인트 티칭 메이크업 서비스원포인트 티칭 메이크업 서비스원포인트 티칭 메이크업 서비스원포인트 티칭 메이크업 서비스</strong>
+                        <p class="desc-prd">1:1 맞춤 메이크업 서비스를 받아보세요</p>
+                        <div class="wrap-time">
+                          <span class="icon icon-time"></span>
+                          <em class="txt-emph">45</em>분
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="link-prd">
+                      <div class="thumb-prd">
+                        <img src="https://images-kr.amoremall.com/o2o/SS0000000369?resize=*:200&amp;crop=200:200;*,*" alt="" class="img-thumb">
+                      </div>
+                      <div class="prd-detail">
+                        <strong class="tit-prd">원포인트 티칭 메이크업 서비스</strong>
+                        <p class="desc-prd">1:1 맞춤 메이크업 서비스를 받아보세요</p>
+                        <div class="wrap-time">
+                          <span class="icon icon-time"></span>
+                          <em class="txt-emph">45</em>분
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="link-prd">
+                      <div class="thumb-prd">
+                        <img src="https://images-kr.amoremall.com/o2o/SS0000000369?resize=*:200&amp;crop=200:200;*,*" alt="" class="img-thumb">
+                      </div>
+                      <div class="prd-detail">
+                        <strong class="tit-prd">원포인트 티칭 메이크업 서비스</strong>
+                        <p class="desc-prd">1:1 맞춤 메이크업 서비스를 받아보세요</p>
+                        <div class="wrap-time">
+                          <span class="icon icon-time"></span>
+                          <em class="txt-emph">45</em>분
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="area-btn">
+                  <button type="button" class="btn-more">
+                    <em class="txt-emph">서비스 예약</em>자세히보기<span class="icon icon-more"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main:e -->
+    <!-- footer:s -->
+    <footer class="footer">
+      <div class="inner">
+        <span class="blind">서비스 정보 목록</span>
+        <ul class="list-service">
+          <li><a href="#none" class="link-service">로그아웃</a></li>
+          <li><a href="#none" class="link-service">이용약관</a></li>
+          <li><a href="#none" class="link-service">개인정보처리방침</a></li>
+        </ul>
+        <span class="txt-copy">&copy; AMOREPACIFIC CORPORATION. ALL RIGHTS RESERVED</span>
+      </div>
+    </footer>
+    <!-- footer:e -->
+    <button type="button" class="btn-top"><span class="icon icon-top">맨 위로 가기</span></button>
+  </div>
+</body>
+</html>
